@@ -1,14 +1,13 @@
 #include<stdlib.h>
 #include<stdio.h>
-
+#include<time.h>
 int jeu = 1;
 int i = 0;
 
 int main() {
-	srand(5);
+	srand(time(NULL));
 	int nombre = rand();
 	int choix;
-	//printf("%u",nombre);
 	while (jeu) { //Tant que le jeu est en cours
 		printf("\nSaisissez une valeur :");
 		scanf_s("%d",&choix);
