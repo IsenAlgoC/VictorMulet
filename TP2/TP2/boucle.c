@@ -25,11 +25,10 @@ int main() {
 	printf("Valeur de la somme : %d", sum1);
 	i = 0;
 	while (i < n+1) {
-	sum2 += i;
+		sum2 += i;
 		i++;
 	}
 	do {
-		SUM = sum3;
 		sum3 += j;
 		j++;
 	}
