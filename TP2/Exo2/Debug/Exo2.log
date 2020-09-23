@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\Exo2\main.c(18,8): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\Exo2\main.c(20,8): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+  Exo2.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\Debug\Exo2.exe
