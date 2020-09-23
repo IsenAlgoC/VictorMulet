@@ -13,13 +13,16 @@ int main() {
 		sum1 += i;
 		}
 	printf("n = %d, sum = %d",n, sum1);
-	while (i < n) {
+	i = 0;
+	while (i < n+1) {
 		sum2 += i;
 		i++;
 	}
 	do {
 		sum3 += j;
 		j++;
+		printf("boucle");
 	}
-	while (!i == n);
+	while ( j<n+1);
+	printf("sum = %d ou %d", sum2, sum3);
 }
