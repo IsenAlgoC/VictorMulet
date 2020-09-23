@@ -16,7 +16,7 @@ int main() {
 	for (i; i < (int)n1 + 1; i++) {
 		SUM = sum1;
 		sum1 += i;
-		if (SUM >= sum1) {
+		if (SUM >= sum1) { //Si dépassement donc resultat qui chute brutalement
 			printf("Changez la valeur de n, calcul impossible :");
 			scanf_s("%hu", &n1);
 			i = 0;
@@ -33,11 +33,6 @@ int main() {
 		sum3 += j;
 		j++;
 	}
-	while ( j<n+1 && SUM <= sum3); //antidépassement
-	//printf("sum = %d ou %d", sum2, SUM);                                             
-	/*while (i< n1 + 1) {
-		SUM = sum1;
-		sum1 += i;
-		i++;
-	}*/
+	while ( j<n+1);
+	printf("n = %d sum = %d ou %d",n, sum2, sum3);                                             
 }
