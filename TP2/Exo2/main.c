@@ -27,7 +27,7 @@ void tri(float* a, float* b, float* c) { //tri décroissant
 	}
 }
 
-int main() {
+	int main() {
 	while (h<=1.f || h>=150 || l <= 1.f || l >= 150 || p <= 1.f || p >= 150) { //Rentrer des dimensions conformes
 		printf("Saisissez les dimensions de vos bagages :");
 		scanf_s("%f", &h);
