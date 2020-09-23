@@ -1,28 +1,43 @@
 #include<stdio.h>
 #include<stdlib.h>
 int n;
-int sum1 = 0;
+unsigned short int sum1 = 0;
 int sum2 = 0;
-int sum3 = 0;
+unsigned short int sum3 = 0;
 n = 100;
 int i = 1;
 int j = 1;
+unsigned short int SUM = 0; //valeur maximale 65 535
+int n1;
 
 int main() {
-	for (i; i < n + 1; i++) {
+	printf("Donner la somme des :");
+	scanf_s("%hu", &n1);
+	for (i; i < (int)n1 + 1; i++) {
+		SUM = sum1;
 		sum1 += i;
+		if (SUM >= sum1) {
+			printf("Changez la valeur de n, calcul impossible :");
+			scanf_s("%hu", &n1);
+			i = 0;
 		}
-	printf("n = %d, sum = %d",n, sum1);
+		}
+	printf("Valeur de la somme : %d", sum1);
 	i = 0;
 	while (i < n+1) {
-		sum2 += i;
+	sum2 += i;
 		i++;
 	}
 	do {
+		SUM = sum3;
 		sum3 += j;
 		j++;
-		printf("boucle");
 	}
-	while ( j<n+1);
-	printf("sum = %d ou %d", sum2, sum3);
+	while ( j<n+1 && SUM <= sum3); //antidépassement
+	//printf("sum = %d ou %d", sum2, SUM);                                             
+	/*while (i< n1 + 1) {
+		SUM = sum1;
+		sum1 += i;
+		i++;
+	}*/
 }

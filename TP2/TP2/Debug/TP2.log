@@ -1,2 +1,10 @@
 ﻿  boucle.c
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(15,10): warning C4477: 'scanf_s' : la chaîne de format '%hu' nécessite un argument de type 'unsigned short *', mais l'argument variadique 1 est de type 'int *'
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(15,10): message : utilisez '%u' dans la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(15,10): message : utilisez '%Iu' dans la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(15,10): message : utilisez '%I32u' dans la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(21,12): warning C4477: 'scanf_s' : la chaîne de format '%hu' nécessite un argument de type 'unsigned short *', mais l'argument variadique 1 est de type 'int *'
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(21,12): message : utilisez '%u' dans la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(21,12): message : utilisez '%Iu' dans la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\TP2\boucle.c(21,12): message : utilisez '%I32u' dans la chaîne de format
   TP2.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\TP2\Debug\Exo1.exe
