@@ -5,4 +5,5 @@ C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): messag
 C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): message : cet argument est utilisé comme taille de mémoire tampon
 C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(78,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(79,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(89,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
   Exo3.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Debug\Exo3.exe

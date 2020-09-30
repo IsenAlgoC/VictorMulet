@@ -8,7 +8,7 @@ int nbnote = 30;
 float note[nbmaxnotes];
 int arret = 0,arret_complet =0;
 int absence = 0;
-double variance;
+float variance;
 float moyenne = 0.f;
 int min = 21;
 int max = -1;
@@ -82,10 +82,11 @@ int main() {
 	moyenne /= indice;
 	for (int i = 0; i < indice; i++) {
 		if (note[i] != -1.f) { 
-			somme = pow((note[i] - moyenne), 2);
-			variance += (1 / (indice - 1)) * somme;
-			printf("somme : %f", variance); }
+			somme += pow((note[i] - moyenne), 2);
+			}
 	}
+	printf("somme = %f", somme);
+	variance = (1.f/(indice-1))*somme;
 	printf("ecart-type : %.10f\n", sqrt(variance));
 	printf("Vous avez entré %d notes, %d absences, la moyenne est de %.2f, la note min est de %d et la note max est de %d\n", indice,absence,moyenne,min,max);
 	affichage(note, nbmaxnotes);
