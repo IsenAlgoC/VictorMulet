@@ -1,6 +1,0 @@
-﻿  main.c
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\Exo3\Cours3\main.c(11,70): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\Exo3\Cours3\main.c(12,75): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\Exo3\Cours3\main.c(13,76): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\Exo3\Cours3\main.c(14,57): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-  Cours3.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet-TP2\Exo3\Debug\Exo3.exe
