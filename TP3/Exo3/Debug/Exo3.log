@@ -1,9 +1,11 @@
 ﻿  main.c
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): warning C4473: 'scanf_s' : nombre insuffisant d'arguments passés pour la chaîne de format
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): message : les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): message : l'argument variadique manquant 2 est demandé par la chaîne de format '%c'
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(49,12): message : cet argument est utilisé comme taille de mémoire tampon
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(78,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(79,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(89,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(56,12): warning C4473: 'scanf_s' : nombre insuffisant d'arguments passés pour la chaîne de format
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(56,12): message : les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(56,12): message : l'argument variadique manquant 2 est demandé par la chaîne de format '%c'
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(56,12): message : cet argument est utilisé comme taille de mémoire tampon
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(85,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(86,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(95,35): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(98,22): warning C4133: 'fonction' : types incompatibles - de 'float [30]' à 'int *'
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Exo3\main.c(102,17): warning C4133: 'fonction' : types incompatibles - de 'int [30]' à 'float *'
   Exo3.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP3\Debug\Exo3.exe

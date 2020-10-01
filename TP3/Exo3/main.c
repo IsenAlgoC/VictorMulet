@@ -13,28 +13,35 @@ float moyenne = 0.f;
 int min = 21;
 int max = -1;
 double somme=0;
-void affichage(float tableau[], int size) { //affichage d'un tableau en "carré"
+void affichage(float tableau[],int index[],  int size, int a) { //affichage d'un tableau en "carré"
 	int compteur = 0;
-	for (int j = 0; j < (int)(sqrt(size))+1; j++) {//partie entière sup
-		for (int k = 0; k < (int)(sqrt(size)); k++) {//partie enitère min
-			printf(" %f ", tableau[compteur]);
-			compteur++;
-
-		}
+	for (int j = 0; j < size; j++) {
+		if (a == 1)printf("Rang:	");
+		printf("No Note	Valeur note\n");
+		printf("%d	",compteur);
+		if (a == 1)printf("%d	", index[j]);
+		printf("%.2f", tableau[compteur]);
 		printf("\n");
+		compteur++;
 	}
+		
 }
-/*void tri(float tableau[], int size,) {
+void tri(float tableau[], float index[], int size) {
+	float tmp;
+	float ind;
 	for (int i = 0; i < size - 1; i++) {
-		for (int k = 0; k < size - i - 1; i++) {
-			if (tableau[k] > tableau[k + 1]) {
-				float j = tableau[k];
-				tableau[k] = tableau[k + 1];
-				tableau[k + 1] = j;
+		for (int j = 0; j < size - i - 1; j++) {
+			if (tableau[j] < tableau[j + 1]) {
+				tmp = tableau[j];
+				ind = index[j];
+				index[j] = index[j + 1];
+				tableau[j] = tableau[j + 1];
+				index[j + 1] = ind;
+				tableau[j + 1] = tmp;
 			}
 		}
 	}
-}*/
+	}
 int main() {
 	for (int i = 0; i < nbmaxnotes; i++) note[i] = -2; //création du tableau
 	while ((indice < nbmaxnotes) && (arret_complet == 0)) {
@@ -43,8 +50,8 @@ int main() {
 		scanf_s("%f", &note[indice]);
 		arret = 0;
 		moyenne = 0;
-		while ((note[indice] < 0.f || note[indice]>20.f) && (arret == 0)) {
-			printf("Elève absent ? Ou voulez-vous arrêter la saisie des notes ? A/O/N : ");
+		while (((float)note[indice] < 0.f || (float)note[indice]>20.f) && (arret == 0)) {
+			printf("Eleve absent ? Ou voulez-vous arreter la saisie des notes ? A/O/N : ");
 			char choice;
 			scanf_s("%c", &choice);
 			switch (choice)
@@ -82,12 +89,17 @@ int main() {
 	moyenne /= indice;
 	for (int i = 0; i < indice; i++) {
 		if (note[i] != -1.f) { 
-			somme += pow((note[i] - moyenne), 2);
+			somme += pow((double)(note[i] - moyenne), 2);
 			}
 	}
-	printf("somme = %f", somme);
 	variance = (1.f/(indice-1))*somme;
-	printf("ecart-type : %.10f\n", sqrt(variance));
-	printf("Vous avez entré %d notes, %d absences, la moyenne est de %.2f, la note min est de %d et la note max est de %d\n", indice,absence,moyenne,min,max);
-	affichage(note, nbmaxnotes);
+	printf("Valeur de l'ecart-type : %.10f\n\n", sqrt(variance));
+	printf("Vous avez entre %d notes, %d absences, la moyenne est de %.2f, la note min est de %d et la note max est de %d\n\n", indice,absence,moyenne,min,max);
+	affichage(note, note, indice, 0);
+	printf("\n");
+	int index[nbmaxnotes];
+	for (int i = 0; i < indice; i++)	index[i] = i; //creation du tableau d'indice
+	tri(note, index, indice);
+	affichage(note, index, indice, 1);
+	printf("\nBye !");
 }
