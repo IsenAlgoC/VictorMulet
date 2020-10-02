@@ -1,18 +1,10 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-char add_w = 192;
-char add_x = 168;
-char add_y = 129;
-char add_z = 10;
-char addr_w;
-char addr_x;
-char addr_y;
-char addr_z;
-char addb_w;
-char addb_x;
-char addb_y;
-char addb_z;
+unsigned char add_w = 192;
+unsigned char add_x = 168;
+unsigned char add_y = 129;
+unsigned char add_z = 10;
 char mask = 24;
 unsigned char maskx = 0;
 unsigned char masky = 0;
@@ -45,16 +37,12 @@ int main() {
 			}
 		}
 	}
-	printf("%u . %u . %u . %u", maskw, maskx, masky, maskz);
-	addr_w = addr_w & maskw;
-	addr_x = addr_x & maskx;
-	addr_y = addr_y & masky;
-	addr_z = addr_z & maskz;
-	printf("%u", (char)~maskz);
-	addb_w = addb_w | ~(maskw);
-	addb_x = addb_x | ~(maskx);
-	addb_y = addb_y | ~(masky);
-	addb_z = addb_z | ~(maskz);
-	printf("%u . %u . %u . %u", addb_w, addb_x, addb_y, addb_z);
+	printf("adresse IPv4 : %u.%u.%u.%u / %d\n",add_w,add_x,add_y,add_z, mask);
+	printf("adresse du reseau : %u.%u.%u.%u / %d\n", add_w & maskw, add_x & maskx, add_y & masky, add_z & maskz,mask);
+	maskw = ~(unsigned char)maskw;
+	maskx = ~(unsigned char)maskx;
+	masky = ~(unsigned char)masky;
+	maskz = ~(unsigned char)maskz;
+	printf("adresse broadcast : %u.%u.%u.%u", add_w | maskw, add_x | maskx, add_y | masky, add_z | maskz);
 
 }
