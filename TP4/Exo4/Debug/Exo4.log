@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP4\Exo4\main.c(7,16): warning C4013: 'strlen' non défini(e) ; extern retournant int pris par défaut
+  Exo4.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP4\Debug\Exo4.exe
