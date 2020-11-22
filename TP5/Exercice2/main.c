@@ -33,7 +33,7 @@ int setElement(TABLEAU* tab, int pos, int element) {//Définir une valeur à sa po
 	if (pos < 1) {//Si la position est incohérente
 		return 0;
 	}
-	if (pos > tab->size) {
+	if (pos > tab->size) {//Si la position est plus loin que la taille du tableau
 		incrementArraySize(tab, pos - tab->size);
 	}
 	if (tab->elt == NULL) {//Si l'adresse est NULL
