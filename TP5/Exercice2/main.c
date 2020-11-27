@@ -39,6 +39,9 @@ int setElement(TABLEAU* tab, int pos, int element) {//Définir une valeur à sa po
 	if (tab->elt == NULL) {//Si l'adresse est NULL
 		return 0;
 	}
+	if (pos > tab->eltsCount) { //Change le nombre de valeurs considérées
+		tab->eltsCount = pos;
+	}
 	tab->elt[pos-1] = element;
 	return pos;
 }
@@ -48,7 +51,8 @@ int displayElements(TABLEAU* tab, int startPos, int endPos) { //Afficher les élé
 		endPos = startPos;
 		startPos = indice;
 	}
-	if (tab->elt == NULL || startPos<1 || endPos > tab->size) {//Si valeurs incohérentes sur les indices ou adresse NULL
+
+	if (tab->elt == NULL || startPos<1 || endPos > tab->eltsCount) {//Si valeurs incohérentes sur les indices ou adresse NULL
 		return -1;
 	}
 	for (int i = startPos; i <= endPos; i++) {
@@ -62,7 +66,7 @@ int deleteElements(TABLEAU* tab, int startPos, int endPos) {//Détruit les élémen
 		endPos = startPos;
 		startPos = indice;
 	}
-	if (tab->elt == NULL || endPos > tab->size || startPos < 1) {//Si valeurs incohérentes sur les indices ou adresse NULL
+	if (tab->elt == NULL || endPos > tab->eltsCount || startPos < 1) {//Si valeurs incohérentes sur les indices ou adresse NULL
 		return -1;
 	}
 	int* tab2 = tab->elt;//Création d'un tableau qui stocke les éléments
@@ -73,6 +77,7 @@ int deleteElements(TABLEAU* tab, int startPos, int endPos) {//Détruit les élémen
 			c++;
 		}
 	}
+	tab->eltsCount -= endPos - startPos + 1;
 	tab->size -= endPos - startPos + 1;
 	return tab->size;
 }
