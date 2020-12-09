@@ -1,4 +1,5 @@
-﻿  outil.c
-D:\Téléchargements\outil.c(27,6): warning C4101: 'idx' : variable locale non référencée
-D:\Téléchargements\outil.c(88,17): warning C4098: 'supprimer_un_contact_dans_rep' : fonction 'void' retournant une valeur
+﻿  liste.c
+  outil.c
+  rep.c
+  Génération de code en cours...
   Repertoire.vcxproj -> C:\Users\mrmul\source\repos\IsenAlgoC\VictorMulet\TP6\Debug\Repertoire.exe
