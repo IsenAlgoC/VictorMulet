@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Téléchargements\rep.h">
+    <ClInclude Include="liste.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Téléchargements\liste.h">
+    <ClInclude Include="personne.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Téléchargements\personne.h">
+    <ClInclude Include="rep.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Téléchargements\rep.c">
+    <ClCompile Include="liste.c">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Téléchargements\outil.c">
+    <ClCompile Include="outil.c">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Téléchargements\liste.c">
+    <ClCompile Include="rep.c">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

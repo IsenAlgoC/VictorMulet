@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Téléchargements\liste.h" />
-    <ClInclude Include="D:\Téléchargements\personne.h" />
-    <ClInclude Include="D:\Téléchargements\rep.h" />
+    <ClInclude Include="liste.h" />
+    <ClInclude Include="personne.h" />
+    <ClInclude Include="rep.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Téléchargements\liste.c" />
-    <ClCompile Include="D:\Téléchargements\outil.c" />
-    <ClCompile Include="D:\Téléchargements\rep.c" />
+    <ClCompile Include="liste.c" />
+    <ClCompile Include="outil.c" />
+    <ClCompile Include="rep.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
